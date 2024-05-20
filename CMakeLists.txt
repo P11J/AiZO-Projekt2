@@ -19,5 +19,5 @@ add_executable(Projekt2 main.cpp
         Source/Algorithms/AlgorithmsHeadings/DijkstraAlgorithm.h
         Source/Algorithms/AlgorithmsCpp/BellmanFordAlgorithm.cpp
         Source/Algorithms/AlgorithmsHeadings/BellmanFordAlgorithm.h
-        Source/Algorithms/FordFulkersonAlgorithm.cpp
-        Source/Algorithms/FordFulkersonAlgorithm.h)
+        Source/Algorithms/AlgorithmsCpp/FordFulkersonAlgorithm.cpp
+        Source/Algorithms/AlgorithmsHeadings/FordFulkersonAlgorithm.h)

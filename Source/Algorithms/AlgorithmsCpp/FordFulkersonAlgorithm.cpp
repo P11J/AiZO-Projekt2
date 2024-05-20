@@ -1,4 +1,4 @@
-#include "FordFulkersonAlgorithm.h"
+#include "../AlgorithmsHeadings/FordFulkersonAlgorithm.h"
 #include <iostream>
 #include <queue>
 #include <climits>

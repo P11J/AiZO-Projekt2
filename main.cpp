@@ -1,11 +1,11 @@
 #include <iostream>
-#include "Graphs/GraphHeadings/MatrixGraph.h"
 #include "Source/Graphs/GraphHeadings/ListGraph.h"
 #include "Source/Algorithms/AlgorithmsHeadings/PrimAlgorithm.h"
 #include "Source/Algorithms/AlgorithmsHeadings/KruskalAlgorithm.h"
 #include "Source/Algorithms/AlgorithmsHeadings/DijkstraAlgorithm.h"
 #include "Source/Algorithms/AlgorithmsHeadings/BellmanFordAlgorithm.h"
-#include "Source/Algorithms/FordFulkersonAlgorithm.h"
+#include "Source/Algorithms/AlgorithmsHeadings/FordFulkersonAlgorithm.h"
+#include "Source/Graphs/GraphHeadings/MatrixGraph.h"
 
 using namespace std;
 
@@ -13,13 +13,13 @@ using namespace std;
 void displayMenu() {
     cout << "1. Wczytaj dane z pliku\n";
     cout << "2. Wygeneruj graf losowo\n";
-    cout << "3. Wyświetl graf listowo i macierzowo na ekranie\n";
+    cout << "3. Wyswietl graf listowo i macierzowo na ekranie\n";
     cout << "4. Algorytm Prima\n";
     cout << "5. Algorytm Kruskala\n";
     cout << "6. Algorytm Dijkstry\n";
     cout << "7. Algorytm Forda-Bellmana\n";
     cout << "8. Algorytm Forda-Fulkersona\n";
-    cout << "0. Wyjście\n";
+    cout << "0. Wyjscie\n";
 }
 
 // Główna funkcja programu
@@ -40,7 +40,7 @@ int main() {
         switch (choice) {
             case 1: {
                 string filename;
-                cout << "Podaj nazwę pliku: ";
+                cout << "Podaj nazwe pliku: ";
                 cin >> filename;
                 matrixGraph->loadFromFile(filename);
                 listGraph->loadFromFile(filename);
@@ -48,9 +48,9 @@ int main() {
             }
             case 2: {
                 int vertices, density;
-                cout << "Liczba wierzchołków: ";
+                cout << "Liczba wierzcholkow: ";
                 cin >> vertices;
-                cout << "Gęstość grafu (%): ";
+                cout << "Gestosc grafu (%): ";
                 cin >> density;
                 matrixGraph = new MatrixGraph(vertices, false);
                 listGraph = new ListGraph(vertices, false);
@@ -119,10 +119,10 @@ int main() {
                 }
                 break;
             case 0:
-                cout << "Zakończenie programu." << endl;
+                cout << "Zakonczenie programu." << endl;
                 break;
             default:
-                cout << "Nieprawidłowa opcja. Spróbuj ponownie." << endl;
+                cout << "Blednie wybrana opcja!!!" << endl;
         }
     } while (choice != 0);
 

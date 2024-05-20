@@ -2,7 +2,7 @@
 #define PROJEKT2_FORDFULKERSONALGORITHM_H
 
 
-#include "AlgorithmsHeadings/Algorithm.h"
+#include "Algorithm.h"
 
 class FordFulkersonAlgorithm : public Algorithm {
 private:
