@@ -47,7 +47,7 @@ int main() {
                 break;
             }
             case 2: {
-                int vertices, density;
+                int vertices = 0, density = 0;
                 cout << "Liczba wierzcholkow: ";
                 cin >> vertices;
                 cout << "Gestosc grafu (%): ";

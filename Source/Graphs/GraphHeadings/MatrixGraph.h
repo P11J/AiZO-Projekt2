@@ -14,7 +14,7 @@ private:
 
 public:
     MatrixGraph(int v, bool d);
-    ~MatrixGraph();
+    ~MatrixGraph() override;
 
     // Metody specyficzne dla reprezentacji macierzowej
     void addEdge(int u, int v, int weight) override;
